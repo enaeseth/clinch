@@ -32,7 +32,7 @@ class PyTest(TestCommand):
 
 setup(
     name='clinch',
-    version='0.1.1',
+    version='0.1.2',
     description='Easy command-line parsing for Python 3',
     url='https://github.com/enaeseth/clinch',
     packages=find_packages(),
