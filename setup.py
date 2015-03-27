@@ -35,6 +35,9 @@ setup(
     version='0.1.0',
     packages=find_packages(),
 
+    author='Eric Naeseth',
+    author_email='eric@naeseth.com',
+
     tests_require=read_requirements('dev-requirements.txt'),
     cmdclass={'test': PyTest},
 
