@@ -1,9 +1,17 @@
 #!/usr/bin/env python3
 
+import os.path
 import sys
 
 from setuptools import setup, find_packages
 from setuptools.command.test import test as TestCommand
+
+root = os.path.abspath(os.path.dirname(__file__))
+
+def read_requirements(filename):
+    path = os.path.join(root, filename)
+    with open(path, 'rt') as f:
+        return [line.strip() for line in f]
 
 class PyTest(TestCommand):
     user_options = [('pytest-args=', 'a', "Arguments to pass to py.test")]
@@ -27,9 +35,6 @@ setup(
     version='0.0.1',
     packages=find_packages(),
 
-    tests_require=[
-        'pytest>=2.7.0,<3',
-        'pytest-cov>=1.8.1,<2',
-    ],
+    tests_require=read_requirements('dev-requirements.txt'),
     cmdclass={'test': PyTest},
 )
