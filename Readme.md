@@ -14,7 +14,8 @@ git = application('a stupid content tracker')
 def add(all: arg('-A', '--all', action='store_true',
                  help='really make things match'),
         paths: arg('paths', nargs='*')):
-    return (add, all, paths)
+    print('all?', ('yes' if all else 'no'))
+    print('paths:', ', '.join(paths))
 
 @git.command('Commit changes')
 def commit(all: arg('-a', '--all',
