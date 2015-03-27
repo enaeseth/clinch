@@ -4,6 +4,7 @@ Clinch
 *easy command-line parsing for Python 3*
 
 [![Build Status](https://travis-ci.org/enaeseth/clinch.svg?branch=master)](https://travis-ci.org/enaeseth/clinch)
+[![PyPI](https://img.shields.io/pypi/v/clinch.svg)](https://pypi.python.org/pypi/clinch)
 
 ```python
 from clinch import application, arg
