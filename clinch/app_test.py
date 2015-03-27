@@ -40,7 +40,7 @@ def test_run():
         run('lol')
 
 def test_run_sys_argv(monkeypatch):
-    monkeypatch.setattr('sys.argv', ['commit', '-a'])
+    monkeypatch.setattr('sys.argv', ['git', 'commit', '-a'])
     assert git.run() == (commit, True, None, False)
 
 def test_repr():
