@@ -8,3 +8,11 @@ install:
   - pip install -e .
   - pip install -r dev-requirements.txt
 script: py.test --cov clinch --cov-report term-missing
+deploy:
+  provider: pypi
+  user: enaeseth
+  password:
+    secure: TESTceOmMhLl2FVr3/0LrUCLiZR8L+ZEwyrPNig0NsRWr6Kew5p9pLTTGkkOAmlc1aw5uCiin89XF3uuK90cajyzCvF7HDo55ucXi/m05xd+LfhCyVoZ3j7ADuHyMOfgmqPaPVnbwcCS9gE8HDoOOtkaItHAXKFOis8mhRroOtY=
+  on:
+    tags: true
+    repo: enaeseth/clinch
