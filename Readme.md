@@ -3,6 +3,8 @@ Clinch
 
 *easy command-line parsing for Python 3*
 
+[![Build Status](https://travis-ci.org/enaeseth/clinch.svg?branch=master)](https://travis-ci.org/enaeseth/clinch)
+
 ```python
 from clinch import application, arg
 
