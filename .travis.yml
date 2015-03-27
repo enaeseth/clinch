@@ -12,7 +12,7 @@ deploy:
   provider: pypi
   user: enaeseth
   password:
-    secure: TESTceOmMhLl2FVr3/0LrUCLiZR8L+ZEwyrPNig0NsRWr6Kew5p9pLTTGkkOAmlc1aw5uCiin89XF3uuK90cajyzCvF7HDo55ucXi/m05xd+LfhCyVoZ3j7ADuHyMOfgmqPaPVnbwcCS9gE8HDoOOtkaItHAXKFOis8mhRroOtY=
+    secure: KR6FBfURVrQLOOOEGirtjzrz05FmqlkVP2uJZ8I5MsFeTfWVnSDCffMaT8CCWR5eX/L/IitGgY/Xf1KRsL0jqf/W+SDxSDiU44MtajdDqWwuXgPKAzDjpvhyy1qn6d+bp5q1/rZv5bKDVvSnAh6CvZAQ1z04cuGqtFO0Hdss4g8=
   on:
     tags: true
     repo: enaeseth/clinch
