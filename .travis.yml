@@ -7,7 +7,7 @@ python:
 install:
   - pip install -e .
   - pip install -r dev-requirements.txt
-script: py.test --cov clinch --cov-report term-missing
+script: make test
 deploy:
   provider: pypi
   user: enaeseth
